@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
     }
 
     const id = uuidv4();
-    const created_at = new Date().toISOString();
+    const created_at = new Date().toDateString();
 
     const data: User = {
       id: id,
