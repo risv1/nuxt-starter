@@ -21,7 +21,7 @@ const { toasts } = useToast()
             {{ toast.description }}
           </ToastDescription>
         </template>
-        <ToastClose />
+        <ToastClose class="text-white hover:text-white" />
       </div>
       <component class="hover:bg-white hover:text-black" :is="toast.action" />
     </Toast>

@@ -3,7 +3,6 @@
 </template>
 
 <script setup>
-
 import { useToast } from '@/components/ui/toast/use-toast'
 import { ToastAction } from '@/components/ui/toast'
 
@@ -20,7 +19,7 @@ const props = defineProps({
     },
     description: {
         type: String,
-        required: true
+        required: false
     },
 })
 
