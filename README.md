@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Nuxt-Shadcn-Drizzle Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a starter project for bootstrapping a Nuxt app with Shadcn-vue and Drizzle ORM, with Pinia for state 
+management.
+
+## Stack
+
+Built using ![Nuxt Logo](public/icon-green.png)[Nuxt](https://nuxt.com/), ![Shadcn Logo](public/icon-shadcn.png)[Shadcn-vue](https://www.shadcn-vue.com/), ![Drizzle Logo](public/icon-drizzle.png)[Drizzle ORM](https://orm.drizzle.team/), ![TailwindCSS Logo](public/icon-tailwind.png)[TailwindCSS](https://tailwindcss.com/)
 
 ## Setup
 
-Make sure to install the dependencies:
+1. Run `pnpm install` to install all dependencies.
+2. Create a .env file, and add `DB_URL`, `JWT_SECRET` respectively.
+3. Setup your preferred SQL database in `database/`, this example uses Postgres
+4. Run `docker compose up -d` if an instance is preferred.
+5. Run `pnpm dev` to start the application
 
-```bash
-# npm
-npm install
+## License
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Nuxt-Shadcn-Drizzle Starter is licensed under the [MIT License](https://github.com/risv1/nuxt-shadcn-drizzle-starter/blob/main/LICENSE).
