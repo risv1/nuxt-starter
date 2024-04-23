@@ -5,8 +5,6 @@ management.
 
 ## Stack
 
-## Stack
-
 Built using <img src="public/icon-green.png" alt="Nuxt Logo" width="30" height="30"> [Nuxt](https://nuxt.com/), <img src="public/icon-shadcn.png" alt="Shadcn Logo" width="30" height="30"> [Shadcn-vue](https://www.shadcn-vue.com/), <img src="public/icon-drizzle.png" alt="Drizzle Logo" width="30" height="30"> [Drizzle ORM](https://orm.drizzle.team/), <img src="public/icon-tailwind.png" alt="TailwindCSS Logo" width="30" height="30"> [TailwindCSS](https://tailwindcss.com/)
 
 ## Setup

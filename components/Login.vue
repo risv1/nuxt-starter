@@ -48,10 +48,10 @@ import { Button } from "@/components/ui/Button";
 
 defineProps({
   switchLayer: {
-      type: Function,
-      required: true,
-    },
-  });
+    type: Function,
+    required: true,
+  },
+});
 
 const { user, setUser } = useAuthStore();
 const { toast } = useToast();
@@ -88,7 +88,7 @@ const onSubmit = async (event) => {
           statusCode: 400,
         });
       }
-      if(res.ok){
+      if (res.ok) {
         const data = await res.json();
         setUser({
           name: data.user.name,

@@ -64,5 +64,4 @@ const logout = async () => {
     });
   }
 };
-
 </script>

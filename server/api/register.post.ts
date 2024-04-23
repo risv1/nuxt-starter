@@ -51,8 +51,8 @@ export default defineEventHandler(async (event) => {
   } catch (e: any) {
     console.error("Error: ", e);
     return {
-        message: "Error: " + e,
-        statusCode: 500,
+      message: "Error: " + e,
+      statusCode: 500,
     };
   }
 });
