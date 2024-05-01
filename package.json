@@ -12,6 +12,7 @@
     "db:push": "drizzle-kit push:pg"
   },
   "dependencies": {
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@pinia/nuxt": "^0.5.1",
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.6",

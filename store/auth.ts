@@ -10,6 +10,9 @@ export const useAuthStore = defineStore({
   state: () => ({
     user: null as User | null,
   }),
+  persist: {
+    storage: persistedState.localStorage,
+  },
   actions: {
     async setUser(user: User | null) {
       this.user = user;
