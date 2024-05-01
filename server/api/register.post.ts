@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import { users } from "~/database/schema";
 import { db } from "~/database/db";
 import { User } from "~/models/users";
+import { set } from "zod";
 
 async function hashPassword(password: string) {
   return await bcrypt.hash(password, 10);
@@ -12,9 +13,9 @@ export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
     if (!body.name || !body.email || !body.password) {
+      setResponseStatus(event, 400);
       return {
         message: "Please provide all required fields.",
-        statusCode: 400,
       };
     }
 
@@ -44,15 +45,16 @@ export default defineEventHandler(async (event) => {
 
     if (!user) {
       console.log("User not created");
-      return { message: "User not created.", statusCode: 400 };
+      setResponseStatus(event, 500);
+      return { message: "User not created."};
     }
 
     return { message: "User created successfully.", user: user };
   } catch (e: any) {
     console.error("Error: ", e);
+    setResponseStatus(event, 500);
     return {
       message: "Error: " + e,
-      statusCode: 500,
     };
   }
 });

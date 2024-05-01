@@ -12,9 +12,9 @@ export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
     if (!body.email || !body.password) {
+      setResponseStatus(event, 400);
       return {
         message: "Please provide all required fields.",
-        statusCode: 400,
       };
     }
 
@@ -23,25 +23,25 @@ export default defineEventHandler(async (event) => {
       .from(users)
       .where(eq(users.email, body.email));
     if (!user) {
+      setResponseStatus(event, 404);
       return {
         message: "User not found.",
-        statusCode: 400,
       };
     }
 
     const isValid = await bcrypt.compare(body.password, user.password);
     if (!isValid) {
+      setResponseStatus(event, 400);
       return {
         message: "Invalid password.",
-        statusCode: 400,
       };
     }
 
     const token = jwt.sign(user, process.env.JWT_SECRET!, { expiresIn: "1h" });
     if (!token) {
+      setResponseStatus(event, 500);
       return {
         message: "Token not created.",
-        statusCode: 400,
       };
     }
 
@@ -50,9 +50,9 @@ export default defineEventHandler(async (event) => {
     return { message: "User logged in successfully.", user: user };
   } catch (e: any) {
     console.error("Error: ", e);
+    setResponseStatus(event, 500);
     return {
       message: "Error: " + e,
-      statusCode: 500,
     };
   }
 });

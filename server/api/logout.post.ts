@@ -6,16 +6,16 @@ export default defineEventHandler(async (event) => {
     const user = jwt.verify(token, "secret");
     if (user) {
       setCookie(event, "token", "", { expires: new Date(0) });
+      setResponseStatus(event, 200);
       return {
-        statusCode: 200,
         message: "Logged out",
       };
     }
   } catch (e) {
     console.error(e);
+    setResponseStatus(event, 500);
     return {
       message: "Error: " + e,
-      statusCode: 500,
     };
   }
 });
