@@ -48,12 +48,9 @@
 
 <script setup>
 import { useToast } from "@/components/ui/toast/use-toast";
-import { ToastAction } from "@/components/ui/toast";
 import { h } from "vue";
 import { ref } from "vue";
 import { z, object } from "zod";
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
 
 const { toast } = useToast();
 
@@ -103,7 +100,7 @@ const onSubmit = async (event) => {
       console.log("Form submitted successfully!", res.body);
       toast({
         title: "Success",
-        description: "Registegreen successfully!",
+        description: "Registered successfully!",
       });
     } else {
       throw createError({

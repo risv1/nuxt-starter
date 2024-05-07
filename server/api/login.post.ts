@@ -47,6 +47,7 @@ export default defineEventHandler(async (event) => {
 
     setCookie(event, "token", token, { httpOnly: true });
 
+    setResponseStatus(event, 200);
     return { message: "User logged in successfully.", user: user };
   } catch (e: any) {
     console.error("Error: ", e);

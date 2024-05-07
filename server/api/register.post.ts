@@ -49,6 +49,7 @@ export default defineEventHandler(async (event) => {
       return { message: "User not created."};
     }
 
+    setResponseStatus(event, 200)
     return { message: "User created successfully.", user: user };
   } catch (e: any) {
     console.error("Error: ", e);

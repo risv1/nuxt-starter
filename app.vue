@@ -11,7 +11,7 @@
 import Toaster from "@/components/ui/toast/Toaster.vue";
 import { fetchUser } from "@/lib/fetchUser";
 import { useAuthStore } from "@/store/auth";
-import { ref, onMounted, watch } from "vue";
+import { ref, onMounted } from "vue";
 
 const { user, setUser } = useAuthStore();
 

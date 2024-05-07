@@ -40,11 +40,8 @@
 <script setup>
 import { useAuthStore } from "@/store/auth";
 import { useToast } from "@/components/ui/toast/use-toast";
-import { ToastAction } from "@/components/ui/toast";
 import { ref } from "vue";
 import { z, object } from "zod";
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
 
 defineProps({
   switchLayer: {
