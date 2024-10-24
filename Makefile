@@ -14,3 +14,7 @@ format:
 
 lint:
 	@bunx biome lint --write ./app ./server 
+
+update-deps:
+	@ncu -u
+	@bun i
