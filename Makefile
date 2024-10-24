@@ -10,7 +10,7 @@ build:
 	@bun .output/server/index.mjs 
 
 format:
-	@bunx biome format --write 
+	@bunx biome format --write ./app ./server
 
 lint:
 	@bunx biome lint --write ./app ./server 

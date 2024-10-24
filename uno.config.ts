@@ -26,6 +26,21 @@ export default defineConfig({
                         margin: 0;
                         padding: 0;
                     }
+
+                    .border {
+                        border-width: 1px;
+                        border-style: solid;
+                    }
+
+                    .border-2 {
+                        border-width: 2px;
+                        border-style: solid;
+                    }
+
+                    .border-4 {
+                        border-width: 4px;
+                        border-style: solid;
+                    }
                 `
             }
         }
