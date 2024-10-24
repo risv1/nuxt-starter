@@ -1,21 +1,20 @@
 <script setup lang="ts">
-
 const colorMode = useColorMode({
-    modes: {
-        light: 'light',
-        dark: 'dark'
-    }
-})
-const isDark = useState('isDark', ()=>true)
+	modes: {
+		light: "light",
+		dark: "dark",
+	},
+});
+const isDark = useState("isDark", () => true);
 
 const toggleColorMode = () => {
-    colorMode.value = colorMode.value === 'light' ? 'dark' : 'light'
-    isDark.value = !isDark.value
-}
+	colorMode.value = colorMode.value === "light" ? "dark" : "light";
+	isDark.value = !isDark.value;
+};
 
 onMounted(() => {
-    isDark.value = colorMode.value === 'dark'
-})
+	isDark.value = colorMode.value === "dark";
+});
 </script>
 
 <template>

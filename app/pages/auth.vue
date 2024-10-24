@@ -1,13 +1,15 @@
 <script setup lang="ts">
-
 const isLogin = ref(true);
 
 const toggleType = () => {
-    isLogin.value = !isLogin.value;
-}
+	isLogin.value = !isLogin.value;
+};
 
-const toggleText = computed(() => isLogin.value ? 'Already have an account? Login here!' : 'Don\'t have an account? Sign up here!');
-
+const toggleText = computed(() =>
+	isLogin.value
+		? "Already have an account? Login here!"
+		: "Don't have an account? Sign up here!",
+);
 </script>
 
 <template>

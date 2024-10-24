@@ -1,35 +1,35 @@
 <script setup lang="ts">
 const icons = [
-    {
-        name: 'pinia',
-        iconName: 'logos:pinia',
-        label: 'Pinia',
-    },
-    {
-        name: 'drizzle',
-        iconName: 'simple-icons:drizzle',
-        label: 'Drizzle ORM',
-    },
-    {
-        name: 'biome',
-        iconName: 'devicon:biome',
-        label: 'Biome',
-    },
-    {
-        name: 'docker',
-        iconName: 'logos:docker-icon',
-        label: 'Docker',
-    },
-    {
-        name: 'bun',
-        iconName: 'devicon:bun',
-        label: 'Bun',
-    },
-    {
-        name: 'unocss',
-        iconName: 'logos:unocss',
-        label: 'UnoCSS',
-    }
+	{
+		name: "pinia",
+		iconName: "logos:pinia",
+		label: "Pinia",
+	},
+	{
+		name: "drizzle",
+		iconName: "simple-icons:drizzle",
+		label: "Drizzle ORM",
+	},
+	{
+		name: "biome",
+		iconName: "devicon:biome",
+		label: "Biome",
+	},
+	{
+		name: "docker",
+		iconName: "logos:docker-icon",
+		label: "Docker",
+	},
+	{
+		name: "bun",
+		iconName: "devicon:bun",
+		label: "Bun",
+	},
+	{
+		name: "unocss",
+		iconName: "logos:unocss",
+		label: "UnoCSS",
+	},
 ];
 </script>
 

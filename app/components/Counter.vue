@@ -1,12 +1,11 @@
 <script setup lang="ts">
-import { useCount } from '~/store/count';
+import { useCount } from "~/store/count";
 const counter = useCount();
 
 const buttons = [
-  { icon: 'ic:baseline-plus', fn: counter.increment },
-  { icon: 'ic:baseline-minus', fn: counter.decrement },
-]
-
+	{ icon: "ic:baseline-plus", fn: counter.increment },
+	{ icon: "ic:baseline-minus", fn: counter.decrement },
+];
 </script>
 
 <template>
