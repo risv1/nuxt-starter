@@ -1,7 +1,16 @@
-version: '3.5'
-
 services:
 
+  nuxt-app:
+    container_name: nuxt_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    
   postgres:
     container_name: postgres_nuxt
     image: postgres
