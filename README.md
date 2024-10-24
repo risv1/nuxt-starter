@@ -1,20 +1,19 @@
-# Nuxt-Shadcn-Drizzle Starter
+# Nuxt 3 Starter Template
 
-This is a starter project for bootstrapping a Nuxt app with Shadcn-vue and Drizzle ORM, with Pinia for state 
-management.
+A modern Nuxt 3 starter template with Drizzle ORM, Biome, Pinia, Docker, UnoCSS and Bun. This template provides a robust foundation for building full-stack applications with best practices and powerful tools.
 
-## Stack
+## 🚀 Stack
 
-Built using <img src="public/icon-green.png" alt="Nuxt Logo" width="30" height="30"> [Nuxt](https://nuxt.com/), <img src="public/icon-shadcn.png" alt="Shadcn Logo" width="30" height="30"> [Shadcn-vue](https://www.shadcn-vue.com/), <img src="public/icon-drizzle.png" alt="Drizzle Logo" width="30" height="30"> [Drizzle ORM](https://orm.drizzle.team/), <img src="public/icon-tailwind.png" alt="TailwindCSS Logo" width="30" height="30"> [TailwindCSS](https://tailwindcss.com/)
+![Nuxt 3 Starter Template](app/public/images/image.png)
 
-## Setup
+- **[Nuxt 3](https://nuxt.com/)** - The Intuitive Vue Framework
+- **[Bun](https://bun.sh/)** - Fast JavaScript runtime & package manager
+- **[UnoCSS](https://unocss.dev/)** - Instant On-demand Atomic CSS Engine
+- **[Drizzle ORM](https://orm.drizzle.team/)** - TypeScript ORM with powerful migrations
+- **[Biome](https://biomejs.dev/)** - Fast linter and formatter
+- **[Pinia](https://pinia.vuejs.org/)** - Intuitive state management
+- **[Docker](https://www.docker.com/)** - Containerization support
 
-1. Run `pnpm install` to install all dependencies.
-2. Create a .env file, and add `DB_URL`, `JWT_SECRET` respectively.
-3. Setup your preferred SQL database in `database/`, this example uses Postgres
-4. Run `docker compose up -d` if an instance is preferred.
-5. Run `pnpm dev` to start the application
+## 📄 License
 
-## License
-
-Nuxt-Shadcn-Drizzle Starter is licensed under the [MIT License](https://github.com/risv1/nuxt-shadcn-drizzle-starter/blob/main/LICENSE).
+MIT License - feel free to use this template for any project!
