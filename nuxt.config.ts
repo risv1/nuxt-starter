@@ -11,4 +11,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt'
   ],
+  unocss: {
+    nuxtLayers: true,
+  },
+  css: ['./app/app.css'],
 })

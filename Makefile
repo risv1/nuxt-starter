@@ -1,20 +1,29 @@
 run:
-	@bun run dev
+	@pnpm run dev
 
 build-client:
-	@bun run generate
-	@bunx serve .output/public
+	@pnpm run generate
+	@pnpm dlx serve .output/public
+
+start:
+	@pnpm run start
 
 build:
-	@bun run build
-	@bun .output/server/index.mjs 
+	@pnpm run build
+	@node .output/server/index.mjs 
 
 format:
-	@bunx biome format --write ./app ./server
+	@pnpm biome format --write ./app ./server
 
 lint:
-	@bunx biome lint --write ./app ./server 
+	@pnpm biome lint --write ./app ./server 
 
 upgrade-deps:
 	@ncu -u
-	@bun i
+	@pnpm i
+
+up:
+	@docker compose up -d
+
+down:
+	@docker compose down -v
