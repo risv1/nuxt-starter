@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "db:generate": "drizzle-kit generate",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "start": "node .output/server/index.mjs"
   },
   "dependencies": {
     "@nuxt/icon": "^1.5.6",
@@ -19,6 +20,7 @@
     "@types/better-sqlite3": "^7.6.11",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/uuid": "^10.0.0",
+    "@unocss/core": "^0.63.6",
     "@unocss/nuxt": "^0.63.6",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",

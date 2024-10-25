@@ -5,6 +5,9 @@ build-client:
 	@pnpm run generate
 	@pnpm dlx serve .output/public
 
+start:
+	@pnpm run start
+
 build:
 	@pnpm run build
 	@node .output/server/index.mjs 
@@ -18,3 +21,9 @@ lint:
 upgrade-deps:
 	@ncu -u
 	@pnpm i
+
+up:
+	@docker compose up -d
+
+down:
+	@docker compose down -v
