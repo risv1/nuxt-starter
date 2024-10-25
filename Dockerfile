@@ -1,27 +1,23 @@
-FROM oven/bun:1.0-slim as builder
+FROM node:20-slim as builder
 
 WORKDIR /app
 
-COPY package.json bun.lockb ./
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
-RUN bun install --frozen-lockfile
+COPY package.json pnpm-lock.yaml ./
+
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
-RUN bun run build
+RUN pnpm run build
 
-FROM oven/bun:1.0-slim
+FROM node:20-slim
 
 WORKDIR /app
 
 COPY --from=builder /app/.output /app/.output
-COPY --from=builder /app/.nuxt /app/.nuxt
-COPY --from=builder /app/package.json /app/package.json
+COPY --from=builder /app/data /app/data
 
 EXPOSE 3000
-
-ENV NODE_ENV=production
-
-CMD ["bun", "run", ".output/server/index.mjs"]
-
-
+CMD ["node", ".output/server/index.mjs"]
