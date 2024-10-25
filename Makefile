@@ -10,10 +10,10 @@ build:
 	@node .output/server/index.mjs 
 
 format:
-	@pnpm dlx biome format --write ./app ./server
+	@pnpm biome format --write ./app ./server
 
 lint:
-	@pnpm dlx biome lint --write ./app ./server 
+	@pnpm biome lint --write ./app ./server 
 
 upgrade-deps:
 	@ncu -u
