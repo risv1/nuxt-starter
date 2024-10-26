@@ -9,7 +9,7 @@ A modern Nuxt 3 starter template with Drizzle ORM, Biome, Pinia, Docker, and Uno
 - **[Nuxt 3](https://nuxt.com/)** - The Intuitive Vue Framework
 - **[UnoCSS](https://unocss.dev/)** - Instant On-demand Atomic CSS Engine
 - **[Drizzle ORM](https://orm.drizzle.team/)** - TypeScript ORM with powerful migrations
-- **[Biome](https://biomejs.dev/)** - Fast linter and formatter
+- **[ESlint](https://eslint.org/)** - The pluggable linting utility
 - **[Pinia](https://pinia.vuejs.org/)** - Intuitive state management
 - **[Docker](https://www.docker.com/)** - Containerization support
 

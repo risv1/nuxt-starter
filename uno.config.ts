@@ -1,13 +1,13 @@
-import { defineConfig, presetAttributify, presetUno } from "unocss"
+import { defineConfig, presetAttributify, presetUno } from 'unocss'
 
 export default defineConfig({
-    theme: {
-        fontFamily: {
-            satoshi: 'Satoshi-Variable'
-        }  
+  theme: {
+    fontFamily: {
+      satoshi: 'Satoshi-Variable',
     },
-    presets: [
-        presetUno(),
-        presetAttributify(),
-    ],
+  },
+  presets: [
+    presetUno(),
+    presetAttributify(),
+  ],
 })

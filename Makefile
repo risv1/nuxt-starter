@@ -12,11 +12,8 @@ build:
 	@pnpm run build
 	@node .output/server/index.mjs 
 
-format:
-	@pnpm biome format --write ./app ./server
-
 lint:
-	@pnpm biome lint --write ./app ./server 
+	@pnpm lint
 
 upgrade-deps:
 	@ncu -u

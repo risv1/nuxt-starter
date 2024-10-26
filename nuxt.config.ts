@@ -1,18 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-10-24',
-  devtools: { enabled: true },
-  srcDir: 'app',
-  serverDir: 'server',
   modules: [
     '@vueuse/nuxt',
-    "@nuxt/icon",
-    "@unocss/nuxt",
+    '@nuxt/icon',
+    '@unocss/nuxt',
+    '@nuxt/eslint',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt'
+    '@pinia-plugin-persistedstate/nuxt',
   ],
+  ssr: false,
+  devtools: { enabled: true },
+  css: ['./app/app.css'],
+  srcDir: 'app',
+  serverDir: 'server',
   unocss: {
     nuxtLayers: true,
   },
-  css: ['./app/app.css'],
+  imports: {
+    dirs: ["./store"],
+  },
 })
