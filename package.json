@@ -1,7 +1,7 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,37 +10,33 @@
     "postinstall": "nuxt prepare",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "start": "node .output/server/index.mjs"
+    "start": "node .output/server/index.mjs",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lintfix": "eslint . --fix && prettier --write --list-different ."
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.6.0",
     "@nuxt/icon": "^1.5.6",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.5.5",
-    "@types/bcrypt": "^5.0.2",
     "@types/better-sqlite3": "^7.6.11",
-    "@types/jsonwebtoken": "^9.0.7",
     "@types/uuid": "^10.0.0",
+    "@unocss/core": "^0.63.6",
     "@unocss/core": "^0.63.6",
     "@unocss/nuxt": "^0.63.6",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
-    "bcrypt": "^5.1.1",
     "better-sqlite3": "^11.5.0",
-    "class-variance-authority": "^0.7.0",
     "drizzle-kit": "0.21",
     "drizzle-orm": "0.29.5",
-    "jsonwebtoken": "^9.0.2",
-    "lucide-vue-next": "^0.453.0",
     "nuxt": "^3.13.2",
     "pinia": "^2.2.4",
     "postgres": "^3.4.4",
     "unocss": "^0.63.6",
     "uuid": "^10.0.0",
     "vue": "^3.5.12",
-    "vue-router": "^4.4.5",
-    "zod": "^3.23.8"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.9.4"
+    "vue-router": "^4.4.5"
   }
 }

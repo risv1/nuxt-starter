@@ -1,8 +1,8 @@
 <template>
-    <main class="w-screen h-screen dark:bg-neutral-900 bg-white">
-        <div class="fixed top-5 right-5">
-            <Theme />
-        </div>
-        <Hero />
-    </main>
+  <main class="h-screen w-screen bg-white dark:bg-neutral-900">
+    <div class="fixed right-5 top-5">
+      <Theme />
+    </div>
+    <Hero />
+  </main>
 </template>

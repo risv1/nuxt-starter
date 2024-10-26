@@ -1,21 +1,26 @@
 <script setup lang="ts">
-import { useCount } from "~/store/count";
-const counter = useCount();
+const counter = useCount()
 
 const buttons = [
-	{ icon: "ic:baseline-plus", fn: counter.increment },
-	{ icon: "ic:baseline-minus", fn: counter.decrement },
-];
+  { icon: 'ic:baseline-plus', fn: counter.increment },
+  { icon: 'ic:baseline-minus', fn: counter.decrement },
+]
 </script>
 
 <template>
-  <div class="mt-8">
-    <div class="flex flex-col items-center gap-4 dark:text-gray-100 text-gray-900">
-      <p class="text-3xl font-medium">Counter: {{ counter.count }}</p>
-      <div class="flex items-center gap-4">
-        <button v-for="button in buttons" @click="button.fn"
-          class="bg-neutral-800 border-none hover:bg-neutral-700 text-gray-100 px-4 py-2 rounded-lg transition-colors duration-200 flex items-center justify-center group">
-          <Icon :name="button.icon" class="w-6 h-6" />
+  <div class="mt-4 sm:mt-6 md:mt-8">
+    <div class="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-gray-900 dark:text-gray-100">
+      <p class="text-2xl sm:text-3xl font-medium">
+        Counter: {{ counter.count }}
+      </p>
+      <div class="flex items-center gap-2 sm:gap-3 md:gap-4">
+        <button
+          v-for="button in buttons"
+          :key="button.icon"
+          class="group flex items-center justify-center rounded-lg border-none bg-neutral-800 px-3 py-1.5 sm:px-4 sm:py-2 text-gray-100 transition-colors duration-200 hover:bg-neutral-700"
+          @click="button.fn"
+        >
+          <Icon :name="button.icon" class="h-5 w-5 sm:h-6 sm:w-6" />
         </button>
       </div>
     </div>
