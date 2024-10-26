@@ -1,5 +1,5 @@
 <template>
-  <div class="font-satoshi">
+  <div class="font-satoshi w-full h-full">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

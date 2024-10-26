@@ -24,6 +24,7 @@
     "@types/better-sqlite3": "^7.6.11",
     "@types/uuid": "^10.0.0",
     "@unocss/core": "^0.63.6",
+    "@unocss/core": "^0.63.6",
     "@unocss/nuxt": "^0.63.6",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
