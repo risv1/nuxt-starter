@@ -1,6 +1,6 @@
 # Nuxt 3 Starter Template
 
-A modern Nuxt 3 starter template with Drizzle ORM, Biome, Pinia, Docker, and UnoCSS. This template provides a robust foundation for building full-stack applications with best practices and powerful tools.
+A modern Nuxt 3 starter template with Drizzle ORM, ESLint, Pinia, Docker, and UnoCSS. This template provides a robust foundation for building full-stack applications with best practices and powerful tools.
 
 ## 🚀 Stack
 
