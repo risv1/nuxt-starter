@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('/fonts/Satoshi-Variable.ttf') format('trueType');
+  font-family: "Satoshi-Variable";
+  src: url("/fonts/Satoshi-Variable.ttf") format("trueType");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;

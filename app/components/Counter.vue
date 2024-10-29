@@ -1,15 +1,17 @@
 <script setup lang="ts">
-const counter = useCount()
+const counter = useCount();
 
 const buttons = [
-  { icon: 'ic:baseline-plus', fn: counter.increment },
-  { icon: 'ic:baseline-minus', fn: counter.decrement },
-]
+  { icon: "ic:baseline-plus", fn: counter.increment },
+  { icon: "ic:baseline-minus", fn: counter.decrement },
+];
 </script>
 
 <template>
   <div class="mt-4 sm:mt-6 md:mt-8">
-    <div class="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-gray-900 dark:text-gray-100">
+    <div
+      class="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 text-gray-900 dark:text-gray-100"
+    >
       <p class="text-2xl sm:text-3xl font-medium">
         Counter: {{ counter.count }}
       </p>

@@ -13,8 +13,7 @@
     "start": "node .output/server/index.mjs",
     "lint": "pnpm lint:eslint && pnpm lint:prettier",
     "lint:eslint": "eslint .",
-    "lint:prettier": "prettier . --check",
-    "lintfix": "eslint . --fix && prettier --write --list-different ."
+    "lint:prettier": "prettier . --write"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.0",
@@ -23,7 +22,6 @@
     "@pinia/nuxt": "^0.5.5",
     "@types/better-sqlite3": "^7.6.11",
     "@types/uuid": "^10.0.0",
-    "@unocss/core": "^0.63.6",
     "@unocss/core": "^0.63.6",
     "@unocss/nuxt": "^0.63.6",
     "@vueuse/core": "^11.1.0",

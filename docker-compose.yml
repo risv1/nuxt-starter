@@ -1,12 +1,11 @@
 services:
-
   nuxt-app:
     container_name: nuxt_app
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - "3000:3000"
 
   postgres:
     container_name: postgres_nuxt
@@ -17,5 +16,5 @@ services:
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
     ports:
-      - '5432:5432'
+      - "5432:5432"
     restart: unless-stopped
