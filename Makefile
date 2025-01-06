@@ -22,10 +22,3 @@ up:
 
 down:
 	@docker compose down -v
-	@pnpm i
-
-up:
-	@docker compose up -d
-
-down:
-	@docker compose down -v
