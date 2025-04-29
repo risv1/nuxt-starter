@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "antfu.unocss",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-vscode.vscode-typescript-next"
+  ]
+}

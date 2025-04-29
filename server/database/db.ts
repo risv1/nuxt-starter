@@ -1,4 +1,7 @@
-import { drizzle } from "drizzle-orm/better-sqlite3";
-import { dbUrl } from "~~/env";
+import postgres from "postgres";
+import { drizzle } from "drizzle-orm/postgres-js";
 
-export const db = drizzle(dbUrl);
+import { DB_URL } from "~~/env";
+
+const client = postgres(DB_URL);
+export const db = drizzle(client);

@@ -6,7 +6,6 @@
 .cache
 dist
 *.db
-.drizzle
 
 # Node dependencies
 node_modules

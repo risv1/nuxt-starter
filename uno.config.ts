@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetUno } from "unocss";
+import { defineConfig, presetAttributify, presetWind } from "unocss";
 
 export default defineConfig({
   theme: {
@@ -6,5 +6,5 @@ export default defineConfig({
       satoshi: "Satoshi-Variable",
     },
   },
-  presets: [presetUno(), presetAttributify()],
+  presets: [presetWind(), presetAttributify()],
 });

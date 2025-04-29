@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "@unocss/nuxt",
     "@nuxt/eslint",
     "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
+    "pinia-plugin-persistedstate/nuxt",
   ],
   ssr: false,
   devtools: { enabled: true },
@@ -19,5 +19,5 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ["./store"],
-  }
+  },
 });

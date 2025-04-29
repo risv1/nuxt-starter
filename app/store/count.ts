@@ -1,13 +1,16 @@
-export const useCount = defineStore({
-  id: "count",
+import { defineStore } from "pinia";
+
+export const useCount = defineStore("count", {
   state: () => ({ count: 0 }),
   actions: {
-    increment() {
+    increment(this: { count: number }) {
       this.count++;
     },
-    decrement() {
+    decrement(this: { count: number }) {
       this.count--;
     },
   },
-  persist: true,
+  persist: {
+    storage: piniaPluginPersistedstate.localStorage(),
+  },
 });
